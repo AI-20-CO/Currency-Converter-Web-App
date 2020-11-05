@@ -98,7 +98,7 @@ try:
                                                 'try ( turkey )', 'ugx ( uganda )', 'yer ( yemen )', 'mad ( western sahara )'])
 
             # Making a to selection
-            input_to = input_from1.selectbox('Country from 🗺️ : ',
+            input_to = input_from1.selectbox('Country to 🗺️ : ',
                                                ['', 'usd ( united states )', 'cad ( canada )', 'aed ( dubai )', 'afn (afghanistan)',
                                                 'inr ( india )',
                                                 'sar ( saudi arabia ) ',
@@ -119,8 +119,12 @@ try:
                                                 'try ( turkey )', 'ugx ( uganda )', 'yer ( yemen )', 'mad ( western sahara )'])
 
             # The output comes in a string , so making it proper by using string slice and a for loop
-            list1 = []
             currency_cnt = convert(input_from[0:3], input_to[0:3], num1)
+
+            # Getting the symbol of the entered currency
+            symbol = curr.get_symbol(input_to[0:3].upper())
+            
+            list1 = []
             length = currency_cnt[40:100]
             for i in currency_cnt:
                 if i.isdigit():
@@ -137,9 +141,6 @@ try:
 
                     # Symbol for currency converter
                     num11.markdown('💱')
-
-                    # Getting the symbol of the entered currency
-                    symbol = curr.get_symbol(input_to[0:3].upper())
 
                     # Output of the converted currency
                     num11.markdown('' + currency_cnt[40:40 + 1 + len(list1)] + ' ' + symbol)
