@@ -29,7 +29,7 @@ try:
         # writing the text using html
         st.text('')
         about_info2 = '''<div
-         style="background-color:white;padding:10px;border-radius:9px">
+         style="background-color:rgb(14, 17, 23);padding:2px;border-radius:9px">
          <h2 
          style="color:black;text-align:center;font-size:20px">DEVELOPER : AYAAN IZHAR
          </h2> 
@@ -39,7 +39,7 @@ try:
 
         # simple html code to make the page vibrant
         about_info3 = '''<div
-         style="background-image: linear-gradient(to left, #f63366, #fffd80);padding:10px;border-radius:9px">
+         style="background-image: linear-gradient(to left, #f63366, #fffd80);padding:2px;border-radius:9px">
          </div> '''
         st.markdown(about_info3, unsafe_allow_html=True)
         st.text('')
@@ -52,7 +52,7 @@ try:
         more_about = st.button('● More to know ● ')
         if more_about:
             more = '''<div
-             style="background-color: white;padding:10px;border-radius:20px"> 
+             style="background-color: rgb(14, 17, 23);padding:10px;border-radius:20px"> 
              <h2 
              style="color:black;text-align:start;font-size:20px">I am a high school python programmer and this is a Currency Converter  💱
              web app which converts currency from 60 different countries. I hope you like it !
@@ -189,19 +189,6 @@ try:
         cnh (chinese)          ars (argentina)      xcd (grenada)      lrd (liberia)
         nzd (new zealand)      clf (chile)          irr (iran)         mvr (maldives)
             ''')
-
-        # Making 5 columns to fit in the github  link button properly
-        g1, g2, g3, g4, g5 = st.beta_columns(5)
-        # git hub link in the form of button
-        g3.header(
-            '[![GitHub](https://img.shields.io/badge/-GitHub-181717?style=flat&logo=github)](https://github.com/Ayaan-20)')
-        st.text('')
-        st.text('')
-        about_info2 = '''<div
-                style="background-image: linear-gradient(to right, #f64f59,#c471ed, #12c2e9);padding:2px;border-radius:9px">
-                </div> '''
-        st.markdown(about_info2, unsafe_allow_html=True)
-        st.markdown('### Developer : Ayaan Izhar')
 
 except:
     pass
