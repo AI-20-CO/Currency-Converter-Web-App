@@ -4,9 +4,26 @@ import streamlit as st
 from google_currency import convert
 
 # Page layout
-st.beta_set_page_config(page_title=' Currency Converter 💰', page_icon='💱', layout='centered',
+st.set_page_config(page_title=' Currency Converter 💰', page_icon='💱', layout='centered',
                         initial_sidebar_state='collapsed')
-
+hide_streamlit_style = st.markdown("""
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            footer {
+                visibility: hidden;
+            }
+            footer:after {
+                content:'Currency Converter 💰'; 
+                visibility: visible;
+                display: block;
+                position: relative;
+                #background-color: red;
+                padding: 5px;
+                top: 2px;
+            }
+            </style>
+            """, unsafe_allow_html=True)
 # Putting the whole program in try except so no errors could be displayed on the main page
 try:
     # getting the codes before hand so it doesn't take more run time
