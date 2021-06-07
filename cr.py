@@ -22,7 +22,7 @@ try:
     if selection == 'About 📜':
         # simple html code to make the page vibrant
         about_info1 = '''<div
-         style="background-image: linear-gradient(to right, #f63366, #fffd80);padding:10px;border-radius:9px">
+         style="background-image: linear-gradient(to right, #f63366, #fffd80);padding:2px;border-radius:9px">
          </div> '''
         st.markdown(about_info1, unsafe_allow_html=True)
 
@@ -31,7 +31,7 @@ try:
         about_info2 = '''<div
          style="background-color:rgb(14, 17, 23);padding:2px;border-radius:9px">
          <h2 
-         style="color:black;text-align:center;font-size:20px">DEVELOPER : AYAAN IZHAR
+         style="color:white;text-align:center;font-size:20px">DEVELOPER : AYAAN IZHAR
          </h2> 
          </div> '''
         st.markdown(about_info2, unsafe_allow_html=True)
