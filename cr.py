@@ -5,6 +5,12 @@ from google_currency import convert
 
 # Page layout
 st.set_page_config(page_title=' Currency Converter', page_icon='💱',initial_sidebar_state='collapsed')
+hide_streamlit_style = st.markdown("""
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            </style>
+            """, unsafe_allow_html=True)
 
 # Putting the whole program in try except so no errors could be displayed on the main page
 try:
