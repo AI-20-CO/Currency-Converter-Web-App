@@ -4,11 +4,10 @@ import streamlit as st
 from google_currency import convert
 
 # Page layout
-st.set_page_config(page_title=' Currency Converter 💰', page_icon='💱',initial_sidebar_state='collapsed')
+st.set_page_config(page_title=' Currency Converter', page_icon='💱',initial_sidebar_state='collapsed')
 hide_streamlit_style = st.markdown("""
             <style>
             #MainMenu {visibility: hidden;}
-            footer {visibility: hidden;}
             </style>
             """, unsafe_allow_html=True)
 # Putting the whole program in try except so no errors could be displayed on the main page
@@ -62,11 +61,7 @@ try:
 
     # The main web app
     elif selection == '💰 Currency converter 💱':
-        about_info2 = '''<div
-        style="background-image: linear-gradient(to left,#bdc3c7, #2c3e50);padding:2px;border-radius:9px">
-        </div> '''
-        st.markdown(about_info2, unsafe_allow_html=True)
-
+        
         # Making 3 columns
         num11, input_from1, input_to1 = st.beta_columns(3)
 
