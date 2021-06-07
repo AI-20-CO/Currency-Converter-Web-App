@@ -57,7 +57,12 @@ try:
 
     # The main web app
     elif selection == '💰 Currency converter 💱':
-        
+        # The layout of the page
+        st.header('💰 Currency converter 💱')
+        about_info2 = '''<div
+        style="background-image: linear-gradient(to left,#bdc3c7, #2c3e50);padding:2px;border-radius:9px">
+        </div> '''
+        st.markdown(about_info2, unsafe_allow_html=True)
         # Making 3 columns
         num11, input_from1, input_to1 = st.beta_columns(3)
 
