@@ -53,7 +53,7 @@ try:
             more = '''<div
              style="background-color: rgb(14, 17, 23);padding:10px;border-radius:20px"> 
              <h2 
-             style="color:black;text-align:start;font-size:20px">I am a high school python programmer and this is a Currency Converter  💱
+             style="color:white;text-align:start;font-size:20px">I am a high school python programmer and this is a Currency Converter  💱
              web app which converts currency from 60 different countries. I hope you like it !
              </h2> 
              </div> '''
